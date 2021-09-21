@@ -98,7 +98,11 @@ class _RandomWordsState extends State<RandomWords> {
       appBar: AppBar(
         title: const Text('Startup Name Generator'),
         actions: [
-          IconButton(icon: const Icon(Icons.list), onPressed: _pushSaved),
+          IconButton(
+            icon: const Icon(Icons.list),
+            onPressed: _pushSaved,
+            tooltip: 'Saved Suggestions',
+          ),
         ],
       ),
       body: _buildSuggestions(),
