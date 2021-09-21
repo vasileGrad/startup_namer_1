@@ -6,8 +6,11 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Welcome to Flutter',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
       home: RandomWords(),
     );
   }
